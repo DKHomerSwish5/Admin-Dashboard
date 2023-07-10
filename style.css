@@ -18,7 +18,33 @@
     background-color: lightblue;
     grid-area: 1 / 1 / 3 / 2;
   }
-
+  #dashboard, #home, #profile, #messages, #history, #tasks, #communities, #settings, #support, #privacy{
+    display:grid;
+    border:solid red;
+    font-family: 'Roboto';
+    grid-template-columns:1fr 3fr;
+    /* filter: invert(100%) sepia(59%) saturate(0%) hue-rotate(30deg) brightness(107%) contrast(102%); */
+  }
+  #dashboard p{
+    font-size: 30px;
+    text-align:left;
+    border:solid green;
+  }
+  .dashboard{
+    height: 50px;
+    width: 50px;
+    border:solid orange;
+    margin-left: 20%;
+  }
+  .interaction img, .userSettings img{
+    height: 30px;
+    width: 30px;
+    border:solid orange;
+    margin-left: 20%;
+  }
+  .interaction p, .userSettings p{
+    text-align: left;
+  }
   .content-feed{
     background-color: grey;
     grid-area: 2 / 2 / 3 / 3;

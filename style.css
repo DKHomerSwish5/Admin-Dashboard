@@ -11,9 +11,47 @@
 
   .header{
     background-color: rgb(59, 122, 59);
+    border:solid orange;
     grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    
   }
-
+  .search{
+    height: 30px;
+    width: 30px;
+    border:solid red;
+  }
+  #searchBar{
+    border:solid yellow;
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  #searchBar input{
+    border:solid red;
+    width:400px;
+    height: 18px;
+    border: 2px solid rgb(206, 206, 206);
+    border-radius: 15px;
+    background-color: rgb(206, 206, 206);
+  }
+  #bottom{
+    grid-area:2/1/3/3;
+  }
+  .buttons ul, .buttons li{
+    font-size: 10px;
+    list-style-type: none;
+    border: 2px solid blue;
+    border-radius: 15px;
+    background-color: blue;
+  }
+  .notifications{
+    height: 30px;
+    width: 30px;
+  }
+  .musicAvi{
+    height: 35px;
+    width: 35px;
+  }
   .sidebar{
     background-color: lightblue;
     grid-area: 1 / 1 / 3 / 2;
@@ -23,12 +61,17 @@
     border:solid red;
     font-family: 'Roboto';
     grid-template-columns:1fr 3fr;
+    margin-bottom:15px;
     /* filter: invert(100%) sepia(59%) saturate(0%) hue-rotate(30deg) brightness(107%) contrast(102%); */
   }
   #dashboard p{
+    font-weight: bold;
     font-size: 30px;
     text-align:left;
     border:solid green;
+  }
+  #dashboard{
+    /* padding-top:3%; */
   }
   .dashboard{
     height: 50px;
@@ -44,6 +87,7 @@
   }
   .interaction p, .userSettings p{
     text-align: left;
+    font-size:20px;
   }
   .content-feed{
     background-color: grey;

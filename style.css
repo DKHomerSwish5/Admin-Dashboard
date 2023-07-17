@@ -21,21 +21,24 @@
     height: 30px;
     width: 30px;
     border:solid red;
+    grid-area: 1 / 1 / 2 / 2;
   }
   #searchBar{
     border:solid yellow;
     grid-area: 1 / 1 / 2 / 3;
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  #searchBar input{
-    border:solid red;
+  #search{
     width:400px;
     height: 18px;
     border: 2px solid rgb(206, 206, 206);
     border-radius: 15px;
     background-color: rgb(206, 206, 206);
+    grid-area: 1 / 2 / 2 / 3;
   }
   #bottom{
     grid-area:2/1/3/3;
+    border:solid pink;
   }
   .buttons ul, .buttons li{
     font-size: 10px;
@@ -47,6 +50,7 @@
   .notifications{
     height: 30px;
     width: 30px;
+    grid-area: 
   }
   .musicAvi{
     height: 35px;

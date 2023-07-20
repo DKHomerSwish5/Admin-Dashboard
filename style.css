@@ -26,7 +26,8 @@
   #searchBar{
     border:solid yellow;
     grid-area: 1 / 1 / 2 / 3;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   #search{
     width:400px;
@@ -36,21 +37,35 @@
     background-color: rgb(206, 206, 206);
     grid-area: 1 / 2 / 2 / 3;
   }
+  .buttons ul{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   #bottom{
     grid-area:2/1/3/3;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
     border:solid pink;
+    text-align: left;
+  }
+  #text{
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
   }
   .buttons ul, .buttons li{
     font-size: 10px;
     list-style-type: none;
+  }
+  .buttons li{
     border: 2px solid blue;
     border-radius: 15px;
     background-color: blue;
+    text-align: center;
   }
+
   .notifications{
     height: 30px;
     width: 30px;
-    grid-area: 
   }
   .musicAvi{
     height: 35px;
@@ -94,7 +109,32 @@
     font-size:20px;
   }
   .content-feed{
+    display: grid;
     background-color: grey;
     grid-area: 2 / 2 / 3 / 3;
+    grid-template-columns: 3fr 1fr;
   }
   
+  .cf-left{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 15px;
+  }
+  .cf-right{
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    padding: 15px;
+    gap: 15px;
+    text-align: left;
+  }
+  .cf-left .card {
+    background-color: #FFFFFF;
+    color: black;
+    text-align: left;
+    height: 200px;
+  }
+  .announcement-card{
+    display: grid;
+    gap: 15px;
+  }

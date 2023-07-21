@@ -27,8 +27,9 @@
     border:solid yellow;
     grid-area: 1 / 1 / 2 / 3;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
   }
+
   #search{
     width:400px;
     height: 18px;
@@ -52,9 +53,14 @@
     /* display: grid; */
     /* grid-template-columns: 1fr 1fr; */
   }
+  .buttons ul{
+    border: 2px solid white;
+  }
   .buttons ul, .buttons li{
     font-size: 10px;
     list-style-type: none;
+    display: grid;
+    gap: 15px;
   }
   .buttons li{
     border: 2px solid blue;
@@ -132,9 +138,20 @@
     background-color: #FFFFFF;
     color: black;
     text-align: left;
-    height: 200px;
   }
   .announcement-card{
     display: grid;
     gap: 15px;
+    background-color: #FFFFFF;
+    color: black;
+    text-align: left;
+    padding: 20px;
+  }
+  .trending-card{
+    display: grid;
+    gap: 15px;
+    background-color: #FFFFFF;
+    color: black;
+    text-align: left;
+    padding: 20px;
   }

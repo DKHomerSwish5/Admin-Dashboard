@@ -39,6 +39,14 @@
   }
   .sb-right{
     border: solid blueviolet;
+    display: grid;
+    align-items: center;
+    padding-left: 15%;
+    /* gap: 5px; */
+    grid-template-columns: 50px 50px 50px;
+  }
+  .notifications{
+    border: solid pink;
   }
   #search{
     height: 18px;
@@ -102,11 +110,15 @@
   .notifications{
     height: 30px;
     width: 30px;
+
   }
   .sb-right .musicAvi{
     height: 50px;
     width: 50px;
     border-radius: 50%;
+  }
+  .sb-right p{
+    padding-left: 15px;
   }
   .sidebar{
     background-color: lightblue;
@@ -154,6 +166,10 @@
   .artist-title{
     text-align: left;
     padding:15px;
+    font-weight: bold;
+  }
+  .announcements{
+    font-weight: bold;
   }
   .cf-left{
     display:grid;
@@ -171,6 +187,9 @@
     padding: 15px;
     gap: 15px;
     text-align: left;
+  }
+  .title{
+    font-weight: bold;
   }
   .cards-left .card {
     background-color: #FFFFFF;
@@ -196,4 +215,7 @@
     text-align: left;
     border-radius: 20px;
     padding: 20px;
+  }
+  .trending{
+    font-weight: bold;
   }
